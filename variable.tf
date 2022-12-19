@@ -1,7 +1,15 @@
-# variable "access_key" {}
-# variable "secret_key" {}
-# variable "region" {}
-# variable "environment" {}
+variable "access_key" {
+  default = ""
+}
+variable "secret_key" {
+  default = ""
+}
+variable "region" {
+  default = ""
+}
+variable "environment" {
+  default = ""
+}
 
 
 variable "instance_count" {
