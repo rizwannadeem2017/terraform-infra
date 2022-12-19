@@ -1,7 +1,7 @@
-variable "access_key" {}
-variable "secret_key" {}
-variable "region" {}
-variable "environment" {}
+# variable "access_key" {}
+# variable "secret_key" {}
+# variable "region" {}
+# variable "environment" {}
 
 
 variable "instance_count" {
