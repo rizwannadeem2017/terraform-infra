@@ -1,9 +1,9 @@
 
 variable "region" {
-  default = ""
+
 }
 variable "environment" {
-  default = ""
+
 }
 
 variable "tags" {
