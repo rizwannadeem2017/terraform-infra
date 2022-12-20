@@ -1,19 +1,19 @@
 
-# variable "access_key" {
-#   default = "AKIA6FNRTBBTOT2CTI4L"
-# }
+variable "access_key" {
+  default = ""
+}
 
-# variable "secret_key" {
-# default = "OpkaksMWf+VgVQ/6T1j6q0mQ5TSHxCO7bvz3k/lv"
-# }
+variable "secret_key" {
+default = ""
+}
 
-# variable "region" {
-# default = "us-west-1"
-# }
+variable "region" {
+default = ""
+}
 
-# variable "environment" {
-# default = "prod"
-# }
+variable "environment" {
+default = ""
+}
 
 
 variable "tags" {
