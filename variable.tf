@@ -1,10 +1,10 @@
 
 
-variable "region" {
-}
+# variable "region" {
+# }
 
-variable "environment" {
-}
+# variable "environment" {
+# }
 
 variable "tags" {
   default = {
