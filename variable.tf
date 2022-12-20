@@ -1,12 +1,10 @@
 
-variable "access_key" {}
 
-variable "secret_key" {}
+variable "region" {
+}
 
-variable "region" {}
-
-variable "environment" {}
-
+variable "environment" {
+}
 
 variable "tags" {
   default = {
@@ -18,8 +16,8 @@ variable "tags" {
 
 variable "instance_count" {
   default = {
-    "us-west-1.prod"    = "2"
-    "us-west-1.staging" = "4"
+    "us-west-1.prod" = "1"
+    "us-west-1.stag" = "1"
   }
 }
 
