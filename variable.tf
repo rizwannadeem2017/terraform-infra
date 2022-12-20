@@ -1,19 +1,11 @@
 
-variable "access_key" {
-  default = ""
-}
+variable "access_key" {}
 
-variable "secret_key" {
-default = ""
-}
+variable "secret_key" {}
 
-variable "region" {
-default = ""
-}
+variable "region" {}
 
-variable "environment" {
-default = ""
-}
+variable "environment" {}
 
 
 variable "tags" {
