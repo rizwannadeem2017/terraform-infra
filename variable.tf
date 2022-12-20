@@ -17,7 +17,7 @@ variable "tags" {
 variable "instance_count" {
   default = {
     "us-west-1.prod"    = "2"
-    "us-west-1.staging" = "1"
+    "us-west-1.staging" = "4"
   }
 }
 
