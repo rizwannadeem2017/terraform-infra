@@ -1,10 +1,5 @@
 
 
-# variable "region" {
-# }
-
-# variable "environment" {
-# }
 
 variable "tags" {
   default = {
