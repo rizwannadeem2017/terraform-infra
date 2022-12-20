@@ -1,10 +1,20 @@
 
-# variable "region" {
+variable "access_key" {
+  default = ""
+}
 
-# }
-# variable "environment" {
+variable "secret_key" {
+default = ""
+}
 
-# }
+variable "region" {
+default = ""
+}
+
+variable "environment" {
+default = ""
+}
+
 
 variable "tags" {
   default = {
