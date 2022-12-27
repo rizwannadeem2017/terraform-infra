@@ -13,7 +13,7 @@ module "ubuntu-vm" {
   ebs_volume_size        = var.ebs_volume_size["${var.region}.${var.environment}"]
   ebs_volume_type        = var.ebs_volume_type["${var.region}.${var.environment}"]
   ssh_user               = var.ssh_user["${var.region}.${var.environment}"]
-  private_key            = file("rsa_id")
+  private_key            = file("auth_key")
   #instance_profile       = var.instance_profile["${var.region}.${var.environment}"]
   vpc_id                 = var.vpc_id["${var.region}.${var.environment}"]
   ssh_public_key         = var.ssh_public_key["${var.region}.${var.environment}"]

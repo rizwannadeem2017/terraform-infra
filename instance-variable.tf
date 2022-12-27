@@ -60,8 +60,8 @@ variable "instance_profile" {
 
 variable "key_name" {
   default = {
-    "us-west-1.prod"    = "rsa_id"
-    "us-west-1.staging" = "rsa_id"
+    "us-west-1.prod"    = "auth_key"
+    "us-west-1.staging" = "auth_key"
   }
 }
 variable "root_block_device_size" {
@@ -102,8 +102,8 @@ variable "private_key" {
 }
 variable "ssh_public_key" {
   default = {
-    "us-west-1.prod"    = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Xqy9GQygr5M0fWQjcBdeQdK5lBl5bpr9JytTNcJTCcflvMdSzJV9WfMZeH40cBoTzR0AMLTcVuEX1I0PJfdgyj3YDtHBqWXH0Ot4Be9AJpTSydUwLk4WMHC8dssHhcyuxQSfJ7VH91ECw7bhVc5Dj/rC5NJt4xGsQRdhXchXCHGLqdTAkzn34E03+Lon6NuuX7cbbXezwUhJwWKiJXb5ZPRXLljD1/QBrP6U3XSrmad5bY5Lzj91RsCkEfhnDmIuPN0Taot12P0RUZITYEA0ozrgwydtt5j2z0q1PUj85QFOhZT7x8uMWfsLhzm0R+OVXPdRDcJTsLTR8mlVpf8N rizwannadeem@rizwannadeems-MacBook-Pro.local"
-    "us-west-1.staging" = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Xqy9GQygr5M0fWQjcBdeQdK5lBl5bpr9JytTNcJTCcflvMdSzJV9WfMZeH40cBoTzR0AMLTcVuEX1I0PJfdgyj3YDtHBqWXH0Ot4Be9AJpTSydUwLk4WMHC8dssHhcyuxQSfJ7VH91ECw7bhVc5Dj/rC5NJt4xGsQRdhXchXCHGLqdTAkzn34E03+Lon6NuuX7cbbXezwUhJwWKiJXb5ZPRXLljD1/QBrP6U3XSrmad5bY5Lzj91RsCkEfhnDmIuPN0Taot12P0RUZITYEA0ozrgwydtt5j2z0q1PUj85QFOhZT7x8uMWfsLhzm0R+OVXPdRDcJTsLTR8mlVpf8N rizwannadeem@rizwannadeems-MacBook-Pro.local"
+    "us-west-1.prod"    = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHfBSe7wUIVp5cit1dMdbHa/bfWufCvE8p8pExAOPsdnuOtEoK7VF52gVxu+AQ3wrarvvtreVF5EBRq2GghOHz3RkAASNhGUhtxPgcwbKXYVQJ9LlSkIzIzh//duTTp3Hygk8nR+S2c0vwhIf3FJCwV9GemhTIA1rKqZyNbjaqE6tiQorqgjXo7PXHLAptsw5M8DthbOH5Ga7BfWLmg2wUwX9r9JMTPXDVTj2MSBmz8x5bqk9+XkzmDWQ++3s8Vpcu99QG6DyXJAhZQFcR+87DtUTUCZYI2PHPc2jftN5VlgB1O/WW62GQIbWCUTwB34WZuL+ErAIARH2sXOFebWYT rizwannadeem@rizwannadeems-MacBook-Pro.local"
+    "us-west-1.staging" = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHfBSe7wUIVp5cit1dMdbHa/bfWufCvE8p8pExAOPsdnuOtEoK7VF52gVxu+AQ3wrarvvtreVF5EBRq2GghOHz3RkAASNhGUhtxPgcwbKXYVQJ9LlSkIzIzh//duTTp3Hygk8nR+S2c0vwhIf3FJCwV9GemhTIA1rKqZyNbjaqE6tiQorqgjXo7PXHLAptsw5M8DthbOH5Ga7BfWLmg2wUwX9r9JMTPXDVTj2MSBmz8x5bqk9+XkzmDWQ++3s8Vpcu99QG6DyXJAhZQFcR+87DtUTUCZYI2PHPc2jftN5VlgB1O/WW62GQIbWCUTwB34WZuL+ErAIARH2sXOFebWYT rizwannadeem@rizwannadeems-MacBook-Pro.local"
   }
 }
 variable "vpc_id" {
