@@ -36,7 +36,7 @@ variable "subnets" {
   type        = list(any)
   description = "Internal/Private subnets ID's"
   default = [{
-    "us-west-1.prod"    = ["subnet-0c0804f0b7984bea7", "subnet-05d3d9ad0ec24823d"]
+    "us-west-1.prod"    = ["subnet-0a36a3d8165090163", "subnet-01e311bed61383d4b"]
     "us-west-1.staging" = ["subnet-012cb745451817f7e", "subnet-057986fff9b4368ee"]
     }
   ]
@@ -108,7 +108,7 @@ variable "ssh_public_key" {
 }
 variable "vpc_id" {
   default = {
-    "us-west-1.prod"    = "vpc-0e3fe3645bc3a7193"
+    "us-west-1.prod"    = "vpc-0298ccd36d417680b"
     "us-west-1.staging" = "vpc-0be0fec5c36c0392e"
   }
 }
