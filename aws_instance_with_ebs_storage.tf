@@ -14,8 +14,8 @@ module "ubuntu-vm" {
   root_block_device_size = var.root_block_device_size["${var.region}.${var.environment}"]
   #ebs_volume_size        = var.ebs_volume_size["${var.region}.${var.environment}"]
   #ebs_volume_type        = var.ebs_volume_type["${var.region}.${var.environment}"]
-  ebs_block_device   = var.ebs_block_device
-  #staging_ebs_block_device = var.ebs_block_device
+  ebs_block_device         = var.ebs_block_device
+  staging_ebs_block_device = var.staging_ebs_block_device
   ebs_termination        = "true"
   ssh_user               = var.ssh_user["${var.region}.${var.environment}"]
   private_key            = file("auth_key")

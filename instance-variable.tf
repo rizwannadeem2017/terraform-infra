@@ -101,6 +101,24 @@ variable "ebs_block_device" {
   ]
 }  
 
+variable "staging_ebs_block_device" {
+  type = list(map(string))
+
+  default = [ {
+      device_name = "/dev/xvdl"
+      volume_size = "11"
+   }, 
+   { 
+      device_name  = "/dev/xvdm"
+      volume_size = "11"
+   },
+   { 
+      device_name  = "/dev/xvdn"
+      volume_size = "12"
+   }
+  ]
+}  
+
 # variable "ebs_block_device" {
 #   type = list(map(string))
 #    default = [ {
