@@ -85,7 +85,7 @@ variable "ebs_volume_size" {
 
 variable "ebs_block_device" {
   type = list(map(string))
-  
+
   default = [ {
       device_name = "/dev/xvdg"
       volume_size = "10"
@@ -97,6 +97,10 @@ variable "ebs_block_device" {
    { 
       device_name  = "/dev/xvda"
       volume_size = "10"
+   },
+      { 
+      device_name  = "/dev/xvdb"
+      volume_size = "11"
    }
   ]
 }  
