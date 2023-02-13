@@ -91,16 +91,12 @@ variable "ebs_block_device" {
       volume_size = "10"
    }, 
    { 
-      device_name  = "/dev/xvds"
+      device_name  = "/dev/xvdy"
       volume_size = "10"
    },
    { 
-      device_name  = "/dev/xvda"
+      device_name  = "/dev/xvdx"
       volume_size = "10"
-   },
-      { 
-      device_name  = "/dev/xvdb"
-      volume_size = "11"
    }
   ]
 }  
