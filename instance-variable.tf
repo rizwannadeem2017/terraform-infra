@@ -82,6 +82,44 @@ variable "ebs_volume_size" {
     "us-west-1.staging" = "10"
   }
 }
+
+variable "ebs_block_device" {
+  type = list(map(string))
+  default = [ {
+      device_name = "/dev/xvdg"
+      volume_size = "10"
+   }, 
+   { 
+      device_name  = "/dev/xvds"
+      volume_size = "10"
+   },
+   { 
+      device_name  = "/dev/xvda"
+      volume_size = "10"
+   }
+  ]
+}
+# variable "ebs_block_device" {
+#   type = list(map(string))
+#    default = [ {
+#      "key" = "value"
+#    } ]
+#     "us-west-1.prod"    = [
+
+#       {"name" = "/dev/xvdg", "size" = "10"},
+#       {"name" = "/dev/xvdy", "size" = "10"},
+#       {"name" =  "/dev/xvdx", "size" = "10"}
+#     ]
+    
+#     "us-west-1.staging" = [
+      
+#       {"name" = "/dev/xvdg", "size" = "10"},
+#       {"name" = "/dev/xvdy", "size" = "10"},
+#       {"name" = "/dev/xvdx", "size" = "10"}
+#     ]
+
+# }
+
 variable "ebs_volume_type" {
   default = {
     "us-west-1.prod"    = "gp3"
