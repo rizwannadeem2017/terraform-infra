@@ -1,8 +1,8 @@
 module "ubuntu-vm" {
   
-  source  = "../terraform-modules/instance_module_with_ebs_storage"
+  #source  = "../terraform-modules/instance_module_with_ebs_storage"
 
-  #source      = "github.com/rizwannadeem2017/terraform-modules//instance_module_with_ebs_storage"
+  source      = "github.com/rizwannadeem2017/terraform-modules//instance_module_with_ebs_storage"
   environment = var.environment
 
   instance_count         = var.instance_count["${var.region}.${var.environment}"]
