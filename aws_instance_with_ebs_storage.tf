@@ -12,8 +12,6 @@ module "ubuntu-vm" {
   subnets                = element(var.subnets, 0)["${var.region}.${var.environment}"]
   root_block_device_type = var.root_block_device_type["${var.region}.${var.environment}"]
   root_block_device_size = var.root_block_device_size["${var.region}.${var.environment}"]
-  #ebs_volume_size        = var.ebs_volume_size["${var.region}.${var.environment}"]
-  #ebs_volume_type        = var.ebs_volume_type["${var.region}.${var.environment}"]
   ebs_block_device         = var.ebs_block_device
   staging_ebs_block_device = var.staging_ebs_block_device
   ebs_termination        = "true"
